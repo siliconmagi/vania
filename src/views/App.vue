@@ -2,34 +2,34 @@
 	<div id="app">
 		<img src="../assets/images/logo.png" height="100" alt="">
 		<h1>vania</h1>
-		<p>
-		<!-- use router-link component for navigation. -->
-		<!-- specify the link by passing the `to` prop. -->
-		<!-- <router-link> will be rendered as an `<a>` tag by default -->
-		<router-link to="/">Go to Home</router-link>
-		<router-link to="/About">Go to About</router-link>
-		</p>
-		<!-- route outlet -->
-		<!-- component matched by the route will render here -->
+		<Navbar></Navbar>
 		<router-view></router-view>
 	</div>
 </template>
 
 <script>
-	export default {
-		mounted() {
-			console.log('welcome!')
-		}
-	}
-	</script>
+	import Navbar from '../components/Navbar';
 
-	<style lang="scss">
-	body {
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		color: #2c3e50;
-	}
-	</style>
+export default {
+	name: 'app',
+	components: {
+		Navbar,
+	},
+};
+</script>
+
+<style lang="scss">
+$back: #27020f;
+$colora: #470022;
+$colorb: #9a1235;
+$colorc: #d77da5;
+body {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+background-color: $colora
+}
+</style>
 
