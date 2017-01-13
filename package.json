@@ -6,9 +6,15 @@
     "build": "vbuild"
   },
   "dependencies": {
-    "vue": "2.1.5"
+    "muse-ui": "^2.0.0-rc.2",
+    "vue": "2.1.5",
+    "vue-router": "^2.1.1",
+    "vuex": "^2.1.1",
+    "vuex-router-sync": "^4.1.0"
   },
   "devDependencies": {
+    "node-sass": "^4.3.0",
+    "sass-loader": "^4.1.1",
     "vue-loader": "10.0.2",
     "vue-template-compiler": "2.1.5"
   }
