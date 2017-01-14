@@ -4,30 +4,30 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  count: 0
+	count: 0,
+	startingZip: 'hard',
+	startingCity: '',
+	endingZip: '',
+	endingCity: ''
 }
 
 const mutations = {
-  INCREMENT(state) {
-    state.count++
-  },
-  DECREMENT(state) {
-    state.count--
-  }
+	increment: state => state.count++,
+	decrement: state => state.count--
 }
 
 const actions = {
-  incrementAsync({commit}) {
-    setTimeout(() => {
-      commit('INCREMENT')
-    }, 200)
-  }
+	incrementAsync({commit}) {
+		setTimeout(() => {
+			commit('increment')
+		}, 200)
+	}
 }
 
 const store = new Vuex.Store({
-  state,
-  mutations,
-  actions
+	state,
+	mutations,
+	actions
 })
 
 export default store

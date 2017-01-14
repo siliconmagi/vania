@@ -2,7 +2,7 @@
 	<div>
 		<h1>vania</h1>
 		<p>
-		Blog Page
+		Portfolio Page
 		</p>
 	</div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 	export default {
 		mounted() {
-			console.log('Blog Page')
+			console.log('Portfolio Page')
 		}
 	}
 	</script>
